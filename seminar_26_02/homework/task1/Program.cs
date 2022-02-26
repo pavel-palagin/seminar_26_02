@@ -1,10 +1,10 @@
 ﻿Console.WriteLine("Введите число a: ");
-string strValue1 = Console.ReadLine();
-int a = int.Parse(strValue1);
+string strA = Console.ReadLine();
+int a = int.Parse(strA);
 
 Console.WriteLine("Введите число b: ");
-string strValue2 = Console.ReadLine();
-int b = int.Parse(strValue2);
+string strB = Console.ReadLine();
+int b = int.Parse(strB);
 
 if (a > b)
 {
