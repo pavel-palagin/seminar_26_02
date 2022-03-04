@@ -1,5 +1,12 @@
 ﻿// Задача 3: Напишите программу, которая выводит третью цифру 
 //заданного числа или сообщает, что третьей цифры нет.
+
+//Console.Write("Type a number : ");
+//string number = Console.ReadLine();
+//int index = 2;
+//if (index < 2) Console.WriteLine("Нет 3ей цифры");
+//else Console.WriteLine(number[index]);
+
 int n = pront("Введите число: ");
 int pront(string strValue)
 {
