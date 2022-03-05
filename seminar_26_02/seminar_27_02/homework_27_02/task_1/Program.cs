@@ -8,10 +8,11 @@ int pront(string strValue)
     return a;
 }
 
-
-int div = n / 10;          // целочисленное деление 
-int ost = div % 10;        // деление с остатком
-
-
-Console.WriteLine("Вторая цифра трехзначного числа: " + ost);
+if (n > 99 & n < 1000) 
+{
+    int div = n / 10;          // целочисленное деление 
+    int ost = div % 10;        // деление с остатком
+    Console.WriteLine("Вторая цифра трехзначного числа: " + ost);
+}
+else Console.WriteLine("Не соответствует условиям задачи");
 
