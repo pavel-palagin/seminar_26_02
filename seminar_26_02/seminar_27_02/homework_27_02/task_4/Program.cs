@@ -10,6 +10,7 @@ int pront(string strValue)
     return a;
 }
 
-if (n < 6) Console.WriteLine("Будний день");
+if (n > 0 & n < 6) Console.WriteLine("Будний день");
 if (n == 6 | n == 7) Console.WriteLine("Выходной день");
 if (n > 7) Console.WriteLine("В неделе 7 дней");
+if (n < 0) Console.WriteLine("Только положительные значения!!!");
