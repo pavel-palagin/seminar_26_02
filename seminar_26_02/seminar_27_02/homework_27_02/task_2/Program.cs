@@ -7,6 +7,7 @@ int value = rnd.Next(99, 999);
 
 Console.WriteLine(value);
 
+
 int a = value / 100;
 int c = value % 10;
 
