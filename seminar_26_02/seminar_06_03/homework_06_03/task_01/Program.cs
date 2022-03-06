@@ -1,2 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Задача 1: Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+
 Console.WriteLine("Hello, World!");
