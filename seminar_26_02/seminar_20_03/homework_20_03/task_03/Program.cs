@@ -10,7 +10,8 @@ int Promt(string message)
 }
 
 int N = Promt("Введите размер массива: ");
-
+int a = Promt("Введите минимальное значение массива: ");
+int b = Promt("Введите максимальное значение массива: ");
 
 void AddArray(int[] array)
 {
@@ -18,7 +19,7 @@ void AddArray(int[] array)
     Random value = new Random();
     for (int index = 0; index < array.Length; index++)
     {
-        array[index] = value.Next(0, 100);
+        array[index] = value.Next(a, b);
     }
 }
 
