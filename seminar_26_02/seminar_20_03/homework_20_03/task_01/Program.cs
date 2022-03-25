@@ -14,20 +14,23 @@ int Promt(string message)
 int A = Promt("Введите число А: ");
 int B = Promt("Введите число В: ");
 
-
 int count = 1;
 int result = 1;
 
-if (B >= 0)
+while (count <= B)
 {
-    while (count <= B)
-    {
     result = result * A;
     count++;
-    
-    }
-Console.WriteLine(result);
+
 }
 
-if (B < 0) Console.WriteLine("Некорректное число В");
+Console.WriteLine(result);
+
+
+
+
+
+
+
+
 
