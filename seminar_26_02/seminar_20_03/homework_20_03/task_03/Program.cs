@@ -16,10 +16,10 @@ int b = Promt("Введите максимальное значение масс
 void AddArray(int[] array)
 {
     
-    Random value = new Random();
+    Random number = new Random();
     for (int index = 0; index < array.Length; index++)
     {
-        array[index] = value.Next(a, b);
+        array[index] = number.Next(a, b);
     }
 }
 
