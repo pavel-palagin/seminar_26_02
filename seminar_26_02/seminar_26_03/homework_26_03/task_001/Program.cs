@@ -30,24 +30,23 @@ void PrintArray(int[] collect)
     Console.Write(collect[collect.Length - 1] + "]");
 }
 
-int FindPossitivValue (int[] array)
+int FindPossitivValue(int[] array)
 {
-int count = 0;
+    int count = 0;
 
-for (int i = 0; i < array.Length; i++)
-{
-    if (array[i] % 2 == 0)
+    for (int i = 0; i < array.Length; i++)
     {
-        count++;
+        if (array[i] % 2 == 0)
+        {
+            count++;
+        }
     }
-}
-return count;
+    return count;
 }
 
 int N = Promt("Введите размер массива: ");
 
 int[] arr = RandArray(N);
-
 
 PrintArray(arr);
 Console.WriteLine();

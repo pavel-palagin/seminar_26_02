@@ -17,16 +17,16 @@ for (int i = 0; i < N; i++)
     arr[i] = int.Parse(Console.ReadLine());
 }
 
-int[] CopyArray(int[] arr)
-{
-    int[] copy = new int[arr.Length];
-    for (int i = 0; i < arr.Length; i++)
-    {
-        copy[i] = arr[i];
-    }
-    return copy;
-}
+// int[] CopyArray(int[] arr)
+// {
+//     int[] copy = new int[arr.Length];
+//     for (int i = 0; i < arr.Length; i++)
+//     {
+//         copy[i] = arr[i];
+//     }
+//     return copy;
+// }
 
-int[] copy = CopyArray(arr);
+// int[] copy = CopyArray(arr);
 
-Console.WriteLine(copy);
+// Console.WriteLine(copy);
