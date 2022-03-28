@@ -1,6 +1,5 @@
 ﻿// Задача 1: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 
-
 int Promt(string message)
 {
     Console.Write(message);
@@ -33,7 +32,6 @@ void PrintArray(int[] collect)
 int FindPossitivValue (int[] array)
 {
 int count = 0;
-
 for (int i = 0; i < array.Length; i++)
 {
     if (array[i] % 2 == 0)
@@ -45,9 +43,7 @@ return count;
 }
 
 int N = Promt("Введите размер массива: ");
-
 int[] arr = RandArray(N);
-
 
 PrintArray(arr);
 Console.WriteLine();
