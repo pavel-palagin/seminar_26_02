@@ -11,5 +11,5 @@ Console.Write(A);
 while (A < N) 
 {
 A = A + 1;
-Console.Write(A+" ");
+Console.Write(A+", ");
 }

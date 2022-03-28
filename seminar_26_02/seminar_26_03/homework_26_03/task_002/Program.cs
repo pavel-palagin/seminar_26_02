@@ -24,11 +24,9 @@ void PrintArray(int[] collect)
     for (int i = 0; i < collect.Length - 1; i++)
     {
         Console.Write(collect[i] + ",");
-
     }
     Console.Write(collect[collect.Length - 1] + "]");
 }
-
 
 int SumOddIndex (int[] array)
 {
@@ -45,9 +43,7 @@ return sum;
 
 
 int N = Promt("Введите размер массива: ");
-
 int[] arr = RandArray(N);
-
 
 PrintArray(arr);
 Console.WriteLine();

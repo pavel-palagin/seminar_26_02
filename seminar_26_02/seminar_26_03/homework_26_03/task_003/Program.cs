@@ -25,7 +25,6 @@ void PrintArray(double[] collect)
     for (int i = 0; i < collect.Length - 1; i++)
     {
         Console.Write(collect[i] + "," + " ");
-
     }
     Console.Write(collect[collect.Length - 1] + "]");
 }
@@ -56,16 +55,11 @@ for (int i = 0; i < array.Length; i++)
 return max;
 }
 
-
 int N = Promt("Введите размер массива: ");
-
 double[] massiv = RandArray(N);
 
-
 //double result = FindMax(array) - FindMin(array);
-
 //string res = string.Format("{0:f3}", value);
-
 
 PrintArray(massiv);
 
