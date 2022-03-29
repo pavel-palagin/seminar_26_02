@@ -14,10 +14,11 @@ double[] RandArray(int lenght)
     Random rand = new Random();
     for (int i = 0; i < lenght; i++)
     {
-        answer[i] = rand.Next(0, 10) + rand.NextDouble();
+        answer[i] = Convert.ToDouble(rand.Next(0, 1000)/10.0);
     }
     return answer;
 }
+
 
 void PrintArray(double[] collect)
 {
@@ -57,9 +58,6 @@ return max;
 
 int N = Promt("Введите размер массива: ");
 double[] massiv = RandArray(N);
-
-//double result = FindMax(array) - FindMin(array);
-//string res = string.Format("{0:f3}", value);
 
 PrintArray(massiv);
 
