@@ -8,25 +8,19 @@ int Promt(string message)
     return Value;
 }
 
-int N = Promt("Введите размер массива: ");
+int n = Promt("Введите количество чисел для ввода: ");
 
-int[] arr = new int[N];
-for (int i = 0; i < N; i++)
+int[] a = new int[n];
+int count = 0;
+for (int i = 0; i < n; i++)
 {
-    Console.Write("Введите {0}-й элемент: ", i + 1);
-    arr[i] = int.Parse(Console.ReadLine());
+    Console.Write("{0}-й элемент: ", i + 1);
+    a[i] = int.Parse(Console.ReadLine());
+    if (a[i] > 0)
+    {
+        count++;
+    }
 }
 
-// int[] CopyArray(int[] arr)
-// {
-//     int[] copy = new int[arr.Length];
-//     for (int i = 0; i < arr.Length; i++)
-//     {
-//         copy[i] = arr[i];
-//     }
-//     return copy;
-// }
+Console.WriteLine($"Чисел больше 0: {count}");
 
-// int[] copy = CopyArray(arr);
-
-// Console.WriteLine(copy);
