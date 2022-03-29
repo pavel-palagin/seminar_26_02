@@ -40,27 +40,27 @@ int digit = rnd.Next();
 string newDigit = digit.ToString();
 return newDigit;
 }
-
-string Prompt(string message)
+*/
+string Promt(string message)
 {
     Console.Write(message);
     string strValue = Console.ReadLine();
     return strValue;
 }
-*/
 
-// string number = Promt("Введите число: ");
-// int len = number.Length;
-// int temp = int.Parse(number);
-// if (temp <= 0 || temp > 0) Console.WriteLine($"Количество цифр в числе {number} равно {len}");
-// else Console.WriteLine("Введите число");
 
-int i = 1;
+string number = Promt("Введите число: ");
+int len = number.Length;
+int temp = int.Parse(number);
+if (temp <= 0 || temp > 0) Console.WriteLine($"Количество цифр в числе {number} равно {len}");
+else Console.WriteLine("Введите число");
 
-while (temp/10 != 0)
-{
-    temp = temp / 10;
-    i++;
-}
+// int i = 1;
+
+// while (temp/10 != 0)
+// {
+//     temp = temp / 10;
+//     i++;
+// }
 
 
