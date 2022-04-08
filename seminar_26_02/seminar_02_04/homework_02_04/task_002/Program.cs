@@ -36,24 +36,23 @@ void PrintArray(int[,] array)
 
 void FindPos(int[,] array)
 {
-int x = Promt("Введите позицию элемента в строке: ");
-int y = Promt("Введите позицию элемента в колонке: ");
+    int x = Promt("Введите позицию элемента в строке: ");
+    int y = Promt("Введите позицию элемента в колонке: ");
 
-for (int i = 0; i < array.GetLength(0); i++)
-{
-    for (int j = 0; j < array.GetLength(1); j++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        
-        if (x - 1 == i && y - 1 == j) Console.Write($"Значение элемента в указанной позиции: {array[i, j]}\t");
-       
-        if (x - 1 > array.GetLength(0) && y - 1 > array.GetLength(1)) Console.Write("Указанная позиция выходит за пределы массива");
-        
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+
+            if (x - 1 == i && y - 1 == j) Console.Write($"Значение элемента в указанной позиции: {array[i, j]}\t");
+            if (x - 1 > i && y - 1 > j) Console.Write("Указанная позиция выходит за пределы массива");
+            
+         // if (x - 1 > array.GetLength(0) && y - 1 > array.GetLength(1)) Console.Write("Указанная позиция выходит за пределы массива");
+
+        }
+
     }
-    
 }
-}
-
-
 
 int R = Promt("Введите количество строк массива: ");
 int C = Promt("Введите количество колонок массива: ");
