@@ -36,26 +36,25 @@ void PrintArray(int[,] array)
 }
 
 
-int R = Promt("Введите количество строк массива: ");
-int C = Promt("Введите количество колонок массива: ");
+int Row = Promt("Введите количество строк массива: ");
+int Coloumn = Promt("Введите количество колонок массива: ");
 
-int[,] array = FillArray(R, C);
+int[,] array = FillArray(Row, Coloumn);
 
 PrintArray(array);
 
 
+double[] sum = new double[Coloumn];
 
-double[] sum = new double[C];
-
-for (int i = 0; i < R; i++)
+for (int i = 0; i < Coloumn; i++)
 {
-    for (int j = 0; j < C; j++)
+    for (int j = 0; j < Row; j++)
     {
         sum[i] = sum[i] + array[j, i];
     }
-    double res = sum[i]/C;
+    double res = sum[i]/Row;
     
-    Console.Write($"{res:0.00}" + " ");
+    Console.Write($"{res:0.00}" + "\t");
 }
 
 Console.WriteLine();
