@@ -42,19 +42,17 @@ void Sort(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            int max = j;
+            int maxValue = j;
             for (int k = j; k < array.GetLength(1); k++)
             {
-                if (array[i, k] > array[i, max]) max = k;
+                if (array[i, k] > array[i, maxValue]) maxValue = k;
             }
             int temp = array[i, j];
-            array[i, j] = array[i, max];
-            array[i, max] = temp;
+            array[i, j] = array[i, maxValue];
+            array[i, maxValue] = temp;
         }
     }
 }
-
-
 
 // void Sort(int[,] array)
 // {
@@ -71,7 +69,6 @@ void Sort(int[,] array)
 //         }
 //     }
 // }
-
 
 int a = Promt("Введите количество строк массива: ");
 int b = Promt("Введите количество колонок массива: ");
