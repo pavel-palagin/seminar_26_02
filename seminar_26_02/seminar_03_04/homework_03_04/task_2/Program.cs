@@ -43,8 +43,6 @@ int[,] array = FillArray(Row, Coloumn);
 
 PrintArray(array);
 
-
-
 int[] sum = new int[Row];
 int min = sum[0];
 for (int i = 0; i < Row; i++)
