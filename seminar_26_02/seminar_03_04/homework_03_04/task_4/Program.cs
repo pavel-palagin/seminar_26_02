@@ -3,17 +3,17 @@
 int[,,] FillArray(int x, int y, int z)
 {
     int[,,] array = new int[x, y, z];
-    int elem = 0;
+    int value = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
-        elem = elem + i;
+        value = value + i;
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            elem = elem + j;
+            value = value + j;
             for (int k = 0; k < array.GetLength(2); k++)
             {
-                elem = elem + k;
-                array[i, j, k] = elem;
+                value = value + k;
+                array[i, j, k] = value;
             }
         }
     }
