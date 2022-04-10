@@ -3,7 +3,7 @@
 int[,,] FillArray(int x, int y, int z)
 {
     int[,,] array = new int[x, y, z];
-    int elem = 10;
+    int elem = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
         elem = elem + i;
@@ -36,6 +36,6 @@ void PrintArray(int[,,] array)
     }
 }
 
-int[,,] array = FillArray(2,2,2);
+int[,,] array = FillArray(1,3,5);
 
 PrintArray(array);
