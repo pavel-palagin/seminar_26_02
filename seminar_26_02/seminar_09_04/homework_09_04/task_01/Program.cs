@@ -23,7 +23,6 @@ void PrintN(int M, int N)
     }
 }
 
-
 int M = Promt("Число M: ");
 int N = Promt("Число N: ");
 
