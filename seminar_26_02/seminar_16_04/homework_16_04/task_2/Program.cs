@@ -21,10 +21,7 @@ void Simple(int N, int D)
     {
         Simple(N, D + 1);
     }
-    else
-    {
-        Console.Write("Не является простым числом");
-    }
+    else Console.Write("Не является простым числом");
 }
 
 int N = Promt("Введите число: ");
