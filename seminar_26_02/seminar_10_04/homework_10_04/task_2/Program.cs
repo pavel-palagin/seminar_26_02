@@ -20,5 +20,4 @@ int[,,] FillArray(int x, int y, int z)
     return array;
 }
 
-
 int[,,] array = FillArray(2, 2, 2);
