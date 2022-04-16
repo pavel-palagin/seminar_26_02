@@ -1,7 +1,6 @@
 ﻿// Задача 3: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n. 
 // m = 3, n = 2 -> A(m,n) = 29
 
-
 int Promt(string message)
 {
     Console.Write(message);
@@ -9,7 +8,6 @@ int Promt(string message)
     int Value = int.Parse(strValue);
     return Value;
 }
-
 
 int Ack(int m, int n)
 {
