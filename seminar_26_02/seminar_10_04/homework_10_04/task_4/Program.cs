@@ -51,7 +51,5 @@ int Degree(int a)
 int[] data = { 0, 1, 1, 1, 1, 0, 0, 0, 1 };
 int[] info = { 2, 3, 3, 1 };
 
-
-
 BinToDec(data, info);
 
