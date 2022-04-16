@@ -21,10 +21,8 @@ void Del(int N)
     {
         Del(N / 2);
     }
-    else
-    {
-        Console.Write("Не является степенью двойки");
-    }
+    else Console.Write("Не является степенью двойки");
+    
 }
 
 int N = Promt("Введите число: ");
