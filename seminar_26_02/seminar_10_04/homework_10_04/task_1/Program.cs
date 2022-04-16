@@ -11,7 +11,6 @@ int Promt(string message)
     return Value;
 }
 
-
 void Row(int i, int count, int N)
 {
     for (int j = 0; j < i; j++)
@@ -22,7 +21,6 @@ void Row(int i, int count, int N)
     }
     Row(i + 1, count, N);
 }
-
 
 int N = Promt("Введите количество значений: ");
 
